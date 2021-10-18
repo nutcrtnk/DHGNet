@@ -1,6 +1,6 @@
 # DHGNet
 
-<img src="figs/dhgnet.png" width="800" height="320">
+<img src="figs/dhgnet.png" width="800" height="360">
 
 Code repository for findings of EMNLP 2021 paper "Cross-lingual Transfer for Text Classification with Dictionary-based Heterogeneous Graph." [[arxiv]](https://arxiv.org/abs/2109.04400)
 
@@ -27,15 +27,15 @@ other requirements:
 
 1. Extract `data/text_cls.zip` file for datasets.
 
-2. Run the code in `src` folder using the command for training and evaluating $\text{DHGNet}_{en}$.
+2. Run the code in `src` folder using the command for training and evaluating DHGNet<sub><i>en</i></sub>.
 
     * For Bosnian setting:\
-    `python main.py bosnian --rnn_layers 1 --directed 0 --add_from_dict 30000` .
+    `python main.py bosnian --rnn_layers 1 --directed 0 --add_from_dict 30000 --name [output_model_name]` .
 
     * For other settings (`bengali`,`malayalam`,`tamil`,`thai_t`,`thai_w`):\
-    `python main.py [ setting_name ]` .
+    `python main.py [setting_name] --name [output_model_name]` .
 
-    * For $\text{DHGNet}_{multi}$, add a command option `--langs ar,en,es,fa,fr,zh` .
+    * For DHGNet<sub><i>multi</i></sub>, add a command option `--langs ar,en,es,fa,fr,zh` .
 
 Note that the code will automatically download source word-embeddings (default `fasttext`) which may take time and disk space.\
 <b>Optionally</b>, you can download dump files that contain all related source word-embeddings for the aforementioned settings in https://1drv.ms/u/s!AkynV6rCKmmXkNBYwRchAWfurRkBrQ?e=NnOszA and put the files in folder `data/word_emb/fasttext_wiki`.\
