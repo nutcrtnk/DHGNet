@@ -2,7 +2,7 @@
 
 <img src="figs/dhgnet.png" width="800" height="360">
 
-Code repository for findings of EMNLP 2021 paper "Cross-lingual Transfer for Text Classification with Dictionary-based Heterogeneous Graph." [[arxiv]](https://arxiv.org/abs/2109.04400)
+Code repository for findings of EMNLP 2021 paper "Cross-lingual Transfer for Text Classification with Dictionary-based Heterogeneous Graph." [[ACL]](https://aclanthology.org/2021.findings-emnlp.130/) [[arxiv]](https://arxiv.org/abs/2109.04400)
 
 ## Requirements
 
@@ -41,3 +41,25 @@ Note that the code will automatically download source word-embeddings (default `
 <b>Optionally</b>, you can download dump files that contain all related source word-embeddings for the aforementioned settings in https://1drv.ms/u/s!AkynV6rCKmmXkNBYwRchAWfurRkBrQ?e=NnOszA and put the files in folder `data/word_emb/fasttext_wiki`.\
 Then run the code with an additional command option `--use_temp_only 1`\
 ** To run using only English as source, you can download only `en.db_temp.pkl`.
+
+## Reference
+
+If you find the code helpful, please cite our work:
+
+```
+@inproceedings{chairatanakul-etal-2021-cross-lingual,
+    title = "Cross-lingual Transfer for Text Classification with Dictionary-based Heterogeneous Graph",
+    author = "Chairatanakul, Nuttapong  and
+      Sriwatanasakdi, Noppayut  and
+      Charoenphakdee, Nontawat  and
+      Liu, Xin  and
+      Murata, Tsuyoshi",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    month = nov,
+    year = "2021",
+    address = "Punta Cana, Dominican Republic",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-emnlp.130",
+    pages = "1504--1517",
+}
+```
